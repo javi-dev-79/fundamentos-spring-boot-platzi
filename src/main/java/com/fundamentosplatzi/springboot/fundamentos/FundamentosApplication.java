@@ -100,9 +100,9 @@ public class FundamentosApplication implements CommandLineRunner {
 //        userRepository.findByNameOrEmailContainingOrderByNameAsc("John", "julie")
 //                .stream()
 //                .forEach(user -> LOGGER.info("Usuario encontrado con containing nombre o email y ordenado ascendente " + user));
-
-        LOGGER.info("El usuario a partir del named parameter es: " + userRepository.getAllByBirthDateAndEmail(LocalDate.of(2021,7,21), "daniela@domain.com")
-                .orElseThrow(()-> new RuntimeException("No se encontro el usuario a partir del named parameter")));
+//
+//        LOGGER.info("El usuario a partir del named parameter es: " + userRepository.getAllByBirthDateAndEmail(LocalDate.of(2021,7,21), "daniela@domain.com")
+//                .orElseThrow(()-> new RuntimeException("No se encontro el usuario a partir del named parameter")));
     }
 
     private void saveUserInDataBase(){
